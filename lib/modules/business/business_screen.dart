@@ -21,7 +21,7 @@ class BusinessScreen extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         itemBuilder: (context, index) => buildNewsItem(list[index],context)  , 
         separatorBuilder: (context, index) =>const SizedBox(height: 5,) , 
-        itemCount: 10,
+        itemCount: list.length,
         ):
         const Center(child:CircularProgressIndicator() ,) 
         ;
