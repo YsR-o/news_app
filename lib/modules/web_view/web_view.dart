@@ -7,9 +7,14 @@ class WebviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: WebView(
-        initialUrl:url ,
+      appBar: AppBar(
+        title: const Text('Details'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal:8.0),
+        child: WebView(
+          initialUrl:url ,
+        ),
       ),
     );
   }
