@@ -19,7 +19,7 @@ class SearchScreen extends StatelessWidget {
         body: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.symmetric(horizontal :20.0),
               child: defaultTextFormField(
                   controller: searchController,
                   type: TextInputType.text,
